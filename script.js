@@ -276,8 +276,12 @@ class Menu extends Phaser.Scene {
 }
 let config = {
     type: Phaser.WEBGL,
-    width: 3000,
-    height: 3000,
+    scale: {
+                mode: Phaser.Scale.FIT,
+                autoCenter: Phaser.Scale.CENTER_BOTH,
+                width: 2600,
+                height: 1270,
+            },
     backgroundColor: 0xFFFFFF,
     scene: [Intro,Animated,Textsplash,BackHouse,Menu],
 }
